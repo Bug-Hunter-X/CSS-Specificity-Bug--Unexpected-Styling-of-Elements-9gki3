@@ -1,0 +1,10 @@
+The following CSS code snippet intends to style a button, but it unexpectedly affects other elements on the page due to a lack of specificity:
+
+```css
+button {
+  background-color: blue;
+  color: white;
+}
+```
+
+This is because the selector `button` is not specific enough; if another element has a similar styling, it will override the button styling, or vice versa.  The problem becomes amplified with nested selectors or when dealing with a complex stylesheet.
